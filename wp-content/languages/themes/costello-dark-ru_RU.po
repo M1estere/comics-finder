@@ -1,0 +1,58 @@
+# Translation of Themes - Costello Dark in Russian
+# This file is distributed under the same license as the Themes - Costello Dark package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-07-31 18:23:06+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: ru\n"
+"Project-Id-Version: Themes - Costello Dark\n"
+
+#. Description of the theme
+#: style.css
+#, gp-priority: high
+msgid "Costello Dark is a Free Dark Portfolio WordPress theme that comes with a modern responsive dark design and highly customizable features and functionalities. The theme is suitable for all kinds of portfolio websites including personal bloggers, creative agencies, freelancers, photographers, illustrators, and similar professionals. The dark design in this theme makes your portfolio website look extra eye-appealing and welcoming to the visitors. Along with the dark bold design, this theme also includes an extensive theme options panel that allows you to tweak colors, fonts, backgrounds, and more. Costello Dark comes with many highly customizable features and sections. For instance, Promotion Headline, Featured Content, Services, Portfolio, Testimonial, Featured Slider, Hero Content, and more. All of these mentioned sections are fully responsive and look absolutely stunning across all devices. In addition, you can also add in your featured sliders and galleries to ace your portfolio. For more information, check out Theme Instructions at https://catchthemes.com/themes/costello-dark/#theme-instructions and Demo at https://catchthemes.com/demo/costello-dark-free/"
+msgstr "Costello Dark - это бесплатная темная тема WordPress для портфолио, которая имеет современный отзывчивый темный дизайн и обладает широкими возможностями настройки и функциональности. Тема подходит для всех видов сайтов-портфолио, включая персональных блогеров, творческие агентства, фрилансеров, фотографов, иллюстраторов и других подобных профессионалов. Благодаря темному дизайну этой темы ваш сайт-портфолио будет выглядеть очень привлекательно и гостеприимно для посетителей. Наряду с темным дизайном эта тема включает в себя обширную панель опций темы, которая позволяет настраивать цвета, шрифты, фоны и многое другое. Costello Dark имеет множество настраиваемых функций и разделов. Например, рекламный заголовок, основной контент, услуги, портфолио, отзывы, слайдер, основной контент и другие. Все эти разделы полностью отзывчивы и выглядят потрясающе на всех устройствах. Кроме того, для улучшения портфолио можно добавить тематические слайдеры и галереи. Для получения дополнительной информации ознакомьтесь с инструкциями к теме на сайте https://catchthemes.com/themes/costello-dark/#theme-instructions и демонстрацией на сайте https://catchthemes.com/demo/costello-dark-free/."
+
+#. Theme Name of the theme
+#: style.css
+#, gp-priority: high
+msgid "Costello Dark"
+msgstr "Costello Dark"
+
+#: inc/customizer/promotion-headline.php:46
+msgid "Page"
+msgstr "Страница"
+
+#: inc/customizer/promotion-headline.php:35
+msgid "Section Tagline"
+msgstr "Краткое описание раздела"
+
+#: inc/customizer/promotion-headline.php:25
+msgid "Enable on"
+msgstr "Включить на"
+
+#: inc/customizer/promotion-headline.php:15
+msgid "Promotion Headline"
+msgstr "Заголовок акции"
+
+#. Author URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://catchthemes.com/"
+msgstr "https://catchthemes.com/"
+
+#. Author of the theme
+#: style.css
+#, gp-priority: low
+msgid "Catch Themes"
+msgstr "Catch Themes"
+
+#. Theme URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://catchthemes.com/themes/costello-dark/"
+msgstr "https://catchthemes.com/themes/costello-dark/"
