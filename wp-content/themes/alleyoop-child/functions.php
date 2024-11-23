@@ -34,8 +34,6 @@ if ( ! function_exists( 'alleyoop_styles' ) ) :
 	 * @return void
 	 */
 	function alleyoop_styles() {
-
-		// Register theme stylesheet.
 		wp_register_style(
 			'alleyoop-style',
 			get_stylesheet_directory_uri() . '/style.css',
@@ -43,7 +41,6 @@ if ( ! function_exists( 'alleyoop_styles' ) ) :
 			wp_get_theme()->get( 'Version' )
 		);
 
-		// Enqueue theme stylesheet.
 		wp_enqueue_style( 'alleyoop-style' );
 
 	}
@@ -51,3 +48,6 @@ if ( ! function_exists( 'alleyoop_styles' ) ) :
 endif;
 
 add_action( 'wp_enqueue_scripts', 'alleyoop_styles' );
+
+add_filter('widget_text', 'shortcode_unautop');
+add_filter('widget_text', 'do_shortcode');
