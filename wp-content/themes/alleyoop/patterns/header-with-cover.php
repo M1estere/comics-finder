@@ -22,6 +22,7 @@
 <div class="wp-block-column has-default-gradient-gradient-background has-background" style="flex-basis:66.6%"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"left":"1rem","top":"1.5rem","bottom":"1.5rem","right":"2.5%"},"blockGap":"0.99rem"},"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"textColor":"base","layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 <div class="wp-block-group alignwide has-base-color has-text-color has-link-color" style="padding-top:1.5rem;padding-right:2.5%;padding-bottom:1.5rem;padding-left:1rem">
 <?php
+  echo 'Teswfaserresafesdgfsft';
   $custom_date = get_post_meta(get_the_ID(), '_news_date', true);
   if ($custom_date) {
       $date = DateTime::createFromFormat('Y-m-d', $custom_date);

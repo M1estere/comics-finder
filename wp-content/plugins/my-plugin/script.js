@@ -1,6 +1,9 @@
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+prevButton.style.display = 'none';
+nextButton.style.display = 'none';
+
 jQuery(document).ready(function($) {
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
     const carousel = document.querySelector('.news-carousel');
     let currentIndex = 0;
 

@@ -44,7 +44,6 @@
 
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"66.66%"} -->
-<div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:template-part {"slug":"comments"} /--></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"33.33%"} -->
