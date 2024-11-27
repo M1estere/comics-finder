@@ -5,3 +5,29 @@ Version: 0.1.0
 Text Domain: alleyoop-child
 Template: alleyoop
 */
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #222;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: opacity 0.3s, background-color 0.3s;
+}
+
+#back-to-top:hover {
+    background-color: #444; /* Цвет при наведении */
+}
+
+#back-to-top span {
+    font-weight: bold;
+}

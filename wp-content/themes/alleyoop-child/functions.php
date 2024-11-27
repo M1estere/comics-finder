@@ -47,7 +47,33 @@ if ( ! function_exists( 'alleyoop_styles' ) ) :
 
 endif;
 
+if ( ! function_exists( 'add_back_to_top_button' ) ):
+	function add_back_to_top_button() {
+		?>
+		<div id="back-to-top" style="display: none;">
+			<span style="color: white; font-size: 22px;">↑</span>
+		</div>
+	
+		<script>
+			window.onscroll = function() {
+				const button = document.getElementById('back-to-top');
+				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+					button.style.display = "block";
+				} else {
+					button.style.display = "none";
+				}
+			};
+		
+			document.getElementById('back-to-top').onclick = function() {
+				window.scrollTo({top: 0, behavior: 'smooth'});
+			};
+		</script>
+		<?php
+	}
+endif;
+
 add_action( 'wp_enqueue_scripts', 'alleyoop_styles' );
 
+add_action('wp_footer', 'add_back_to_top_button');
 add_filter('widget_text', 'shortcode_unautop');
 add_filter('widget_text', 'do_shortcode');
