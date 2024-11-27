@@ -199,13 +199,12 @@ class ComicUploaderPlugin
         if ($file['type'] === 'application/pdf') {
             $thumbnail_path = $this->generate_pdf_thumbnail($upload['file']);
             if ($thumbnail_path) {
-                // Сохраняем миниатюру в базе данных
                 $thumbnail_url = str_replace(ABSPATH, home_url('/'), $thumbnail_path);
             } else {
-                $thumbnail_url = ''; // Ошибка генерации миниатюры
+                $thumbnail_url = '';
             }
         } else {
-            $thumbnail_url = ''; // Если это не PDF, то миниатюра не нужна
+            $thumbnail_url = ''; 
         }
     
         global $wpdb;
@@ -276,10 +275,24 @@ class ComicUploaderPlugin
         global $wpdb;
         $comic_id = intval($_POST['comic_id']);
 
+        $comic = $wpdb->get_row("SELECT * FROM {$this->uploads_table} WHERE id = $comic_id");
         $deleted_from_uploaded = $wpdb->delete($this->uploads_table, ['id' => $comic_id]);
 
         if (!$deleted_from_uploaded) {
+            $comic = $wpdb->get_row("SELECT * FROM {$this->approved_table} WHERE id = $comic_id");
             $deleted_from_approved = $wpdb->delete($this->approved_table, ['id' => $comic_id]);
+        }
+
+        if ($comic) {
+            $file_path = str_replace(home_url('/'), ABSPATH, $comic->url);
+            if (file_exists($file_path)) {
+                unlink($file_path);
+            }
+
+            $thumbnail_file_path = str_replace(home_url('/'), ABSPATH, $comic->thumbnail_url);
+            if (file_exists($thumbnail_file_path)) {
+                unlink($thumbnail_file_path);
+            }
         }
 
         if ($deleted_from_uploaded || $deleted_from_approved) {
